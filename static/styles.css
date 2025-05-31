@@ -333,6 +333,16 @@ p {
   color: var(--accentColor);
   font-family: var(--stdFont);
 }
+img {
+  padding: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 25vh;
+  object-fit: contain;
+}
 a {
   margin: 0px;
   padding: 0px;
@@ -393,6 +403,9 @@ p.msg {
 
 /*DETAIL PAGE MOBILE START*/
 @media screen and (max-width: 800px) {
+  img {
+    height: 15vh;
+  }
   img.pkgAuthor {
     width: 3rem;
     height: 3rem;
