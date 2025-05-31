@@ -1,0 +1,13 @@
+name: "ZIGLOO CI"
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Setup Deno
+        uses: denolib/setup-deno@master
+        with:
+          deno-version: 2.3.5
+      - name: "Run tests."
+        run: deno task test

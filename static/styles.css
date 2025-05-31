@@ -1,0 +1,432 @@
+/*
+Zigloo by Alyx Shang.
+Licensed under the FSL v1.
+*/
+
+/*GENERAL SECTION START*/
+:root {
+  --codeBg: #000000;
+  --bgColor: #1E1E2E;
+  --hoverColor: #808080;
+  --accentColor: #FFFFFF;
+  --headingFont: 'Mogena';
+  --stdFont: 'RobotoFlex';
+  --codeFont: 'FiraCode-Regular';
+}
+html {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0px;
+  padding: 0px;
+  width: 100vw;
+  height: 100vh;
+}
+body {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: var(--bgColor);
+}
+/*GENERAL SECTION END*/
+
+/*HEADING SECTION START */
+div.heading{
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: transparent;
+  border-bottom: 3px solid var(--accentColor);
+}
+h1.heading {
+  margin: 0px;
+  padding: 20px;
+  font-size: 4rem;
+  text-align: left; 
+  color: var(--accentColor);
+  font-family: var(--headingFont);
+}
+/*HEADING SECTION END*/
+
+/*HEADING MOBILE SECTION START*/
+@media screen and (max-width: 800px) {
+  h1 {
+    padding: 20px;
+    font-size: 2.5rem;
+  }
+}
+/*HEADING MOBILE SECTION END*/
+
+/*MAIN SECTION START*/
+div.spacer {
+  width: 100%;
+  margin: 0px;
+  height: 4rem;
+  padding: 0px;
+  background-color: transparent;
+}
+div.main{
+  width: 80%;
+  padding: 0px;
+  display: block;
+  margin: 0 auto;
+  background-color: transparent;
+}
+div.item {
+  margin: 0px;
+  width: 100%;
+  padding: 0px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: 3px solid var(--accentColor);
+}
+h2.item {
+  margin: 0px;
+  font-size: 2rem;
+  padding-top: 20px;
+  padding-left: 20px;
+  font-weight: bolder;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  color: var(--accentColor);
+  font-family: var(--stdFont);
+}
+a.item {
+  margin: 0px;
+  padding: 0px;
+  font-size: 2rem;
+  font-weight: bolder;
+  transition-duration: 0.6s;
+  color: var(--accentColor);
+  text-decoration: underline;
+  font-family: var(--stdFont);
+}
+a.item:hover {
+  color: var(--hoverColor);
+}
+p.item {
+  margin: 0px;
+  font-size: 1.25rem;
+  padding-top: 0px;
+  padding-left: 20px;
+  font-style: normal;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  transition-duration: 0.6s;
+  color: var(--accentColor);
+  text-decoration: none;
+  font-family: var(--stdFont);
+}
+ul.stats {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 0px;
+  width: 100%;
+  list-style: none;
+}
+li.stats {
+  margin: 0px;
+  font-size: 1.25rem;
+  padding-top: 0px;
+  padding-left: 0px;
+  font-style: normal;
+  padding-right: 0px;
+  padding-bottom: 10px;
+  transition-duration: 0.6s;
+  color: var(--accentColor);
+  text-decoration: none;
+  font-family: var(--stdFont);
+}
+div.itemAuthor {
+  display: flex;
+  margin-top: 0px;
+  margin-left: 20px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+img.itemAuthor {
+  width: 50px;
+  height: 50px;
+  padding: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 10px;
+  margin-bottom: 0px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 50%;
+  border: 3px solid var(--accentColor);
+}
+p.itemAuthor{
+  margin: 0px;
+  padding: 0px;
+  font-size: 1.25rem;
+  font-family: var(--stdFont);
+  color: var(--accentColor);
+}
+/*MAIN SECTION END*/
+
+/*MAIN SECTION MOBILE START*/
+@media screen and (max-width: 800px) {
+  div.spacer {
+    height: 2rem;
+  }
+  div.main{
+    width: 90%;
+  }
+  h2.item {
+    font-size: 1.5rem;
+  }
+  a.item {
+    font-size: 1.5rem;
+  }
+  p.item {
+    font-size: 1rem;
+  }
+  li.stats {
+    font-size: 1rem;
+  }
+  img.itemAuthor {
+    width: 30px;
+    height: 30px;
+  }
+}
+/*MAIN SECTION MOBILE END*/
+
+/*DETAIL PAGE START*/
+div.userReadme{
+  margin: 0px;
+  padding: 20px; 
+  border-radius: 10px;
+  box-sizing: border-box;  
+  background-color: transparent;
+  border: 3px solid var(--accentColor);
+}
+div.packageInfo{
+  margin: 0px;
+  padding: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: 3px solid var(--accentColor);
+}
+div.pkgAuthor{
+  width: 100%;
+  margin: 0px;
+  padding: 20px;
+  display: flex;
+  border-radius: 10px;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: flex-start;
+  background-color: transparent;
+  border: 3px solid var(--accentColor);
+}
+img.pkgAuthor {
+  width: 5rem;
+  height: 5rem;
+  padding: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 10px;
+  margin-bottom: 0px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 50%;
+  border: 3px solid var(--accentColor);
+}
+p.pkgAuthor {
+  margin: 0px;
+  padding: 0px;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: bolder;
+  color: var(--accentColor);
+  font-family: var(--stdFont);
+}
+h2.pkgName {
+  margin: 0px;
+  text-align: left;
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  font-size: 2rem;
+  font-family: var(--stdFont);
+  color: var(--accentColor);
+}
+p.pkgRepo {
+  margin: 0px;
+  text-align: left;
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  font-size: 1.25rem;
+  font-family: var(--stdFont);
+  color: var(--accentColor);
+}
+ul.pkgStats{
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  box-sizing: border-box;
+}
+li.pkgStats{
+  margin: 0px;
+  text-align: left;
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  font-size: 1.25rem;
+  font-family: var(--stdFont);
+  color: var(--accentColor);
+}
+h1,h2,h3,h4 {
+  margin: 0px;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  font-weight: bolder;
+  padding-bottom: 10px;
+  color: var(--accentColor);
+  text-decoration: underline;
+  font-family: var(--stdFont);
+}
+h1{ font-size: 2.25rem; }
+h2{ font-size: 2rem; }
+h3{ font-size: 1.75rem; }
+h4{ font-size: 1.5rem; }
+p {
+  margin: 0px;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  font-size: 1.25rem;
+  font-weight: normal;
+  padding-bottom: 10px;
+  text-decoration: normal;
+  color: var(--accentColor);
+  font-family: var(--stdFont);
+}
+a {
+  margin: 0px;
+  padding: 0px;
+  font-size: 1.25rem;
+  font-weight: normal;
+  padding-bottom: 10px;
+  color: var(--accentColor);
+  text-decoration: underline;
+  font-family: var(--stdFont);
+}
+li {
+  margin: 0px;
+  padding: 0px;
+  font-size: 1.25rem;
+  font-weight: normal;
+  padding-bottom: 10px;
+  color: var(--accentColor);
+  font-family: var(--stdFont);
+}
+ul {
+  margin: 0px;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 10px;
+  list-style: none;
+}
+code {
+  margin: 0px;
+  padding: 0px;
+  font-size: 1.25rem;
+  color: var(--accentColor);
+  font-family: var(--codeFont);
+  background-color: var(--codeBg);
+}
+pre {
+  padding: 20px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  overflow-x: scroll;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  background-color: var(--codeBg);
+}
+p.msg {
+  top: 50%;
+  left: 50%;
+  margin: 0px;
+  padding: 0px;
+  font-size: 2rem;
+  position: absolute;
+  color: var(--accentColor);
+  font-family: var(--stdFont);
+  transform: translate(-50%, -50%);
+}
+/*DETAIL PAGE END*/
+
+/*DETAIL PAGE MOBILE START*/
+@media screen and (max-width: 800px) {
+  img.pkgAuthor {
+    width: 3rem;
+    height: 3rem;
+  }
+  p.msg {
+    font-size: 1.75rem;
+  }
+  p.pkgAuthor {
+    font-size: 1.75rem;
+  }
+  h2.pkgName {
+    font-size: 1.75rem;
+  }
+  p.pkgRepo {
+    font-size: 1rem;
+  }
+  li.pkgStats{
+    font-size: 1rem;
+  }
+  h1{ font-size: 2rem; }
+  h2{ font-size: 1.75rem; }
+  h3{ font-size: 1.5rem; }
+  h4{ font-size: 1.25rem; }
+  p {
+    font-size: 1rem;
+  }
+  a {
+    font-size: 1rem;
+  }
+  li {
+    font-size: 1rem;
+  }
+  code {
+    font-size: 1rem;
+  }
+}
+/*DETAIL PAGE MOBILE END*/
