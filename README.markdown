@@ -4,7 +4,7 @@
 
 ![Deploy CI](https://github.com/alyxshang/zigloo/actions/workflows/deploy.yml/badge.svg)
 
-***A take on a Zig package registry.  :lizard: :package:***
+***A fresh take on a Zig package registry.  :lizard: :package:***
 
 ## ABOUT :books:
 
