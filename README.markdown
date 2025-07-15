@@ -26,6 +26,35 @@ add the `zig-package` and `zig-library` topics to your Zig project on GitHub. Yo
 To run the included unit tests, please run the following command from
 the root of this repository: `deno task test`.
 
+### Running the app
+
+This app is packaged using Docker. To build the Zigloo container, please
+execute these steps:
+
+- 1.) Download Zigloo's source code:
+
+```
+git clone https://github.com/alyxshang/zigloo
+```
+
+- 2.) Change directory into the project's root directory:
+
+```
+cd zigloo
+```
+
+- 3.) Build the container:
+
+```
+docker build -t zigloo .
+```
+
+- 4.) The built container uses port `8000` internally. To use a custom port, use Docker's `-p` flag to run the container using the following command (`your_port` is the port on your host machine you would like to use):
+
+```
+docker run -p your_port:8000 zigloo
+```
+
 ## CHANGELOG :black_nib:
 
 ### Version 0.1.0
